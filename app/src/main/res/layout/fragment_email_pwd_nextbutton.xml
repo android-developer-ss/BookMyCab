@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/registerPage_horizontal_margin"
+    android:layout_marginRight="@dimen/registerPage_horizontal_margin"
+
+    android:orientation="vertical">
+
+    <!-- *********************************************************************************** -->
+    <!-- EMAIL -->
+    <LinearLayout
+        style="@style/TextEditStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Email"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/user_email_id"
+            style="@style/EditTextStyleRegisterForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Email Id" />
+    </LinearLayout>
+
+
+    <!-- *********************************************************************************** -->
+    <!-- PASSWORD -->
+    <LinearLayout
+        style="@style/TextEditStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Password"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/user_password"
+            style="@style/EditTextStyleRegisterForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password" />
+    </LinearLayout>
+
+    <!-- *********************************************************************************** -->
+    <!-- NEXT BUTTON-->
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:onClick="next_button_function"
+        android:text="NEXT" />
+
+</LinearLayout>

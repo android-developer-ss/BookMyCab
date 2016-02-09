@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorLightYellow0">#FFFFCC</color>
+    <color name="colorLightYellow1">#ffff99</color>
+    <color name="colorLightYellow2">#ffff7f</color>
+    <color name="colorBrightYellow3">#ffff4c</color>
+    <color name="colorGrey0">#a8a8a8</color>
+    <color name="colorGrey1">#939393</color>
+    <color name="colorGrey2">#7e7e7e</color>
+    <color name="colorGrey3">#696969</color>
+    <color name="colorGrey4">#545454</color>
+    <color name="colorGrey5">#3f3f3f</color>
+    <color name="colorBlack0">#ffffff</color>
+    <color name="colorBlack1">#e5e5e5</color>
+    <color name="colorBlack2">#cccccc</color>
+    <color name="colorBlack4">#b2b2b2</color>
+    <color name="colorBlack5">#999999</color>
+    <color name="colorBlack6">#7f7f7f</color>
+    <color name="colorBlack7">#666666</color>
+    <color name="colorBlack8">#4c4c4c</color>
+    <color name="colorBlack9">#323232</color>
+    <color name="colorBlack10">#191919</color>
+    <color name="colorBlack11">#000000</color>
+    <color name="colorFBDarkBlue">#3b5998</color>
+    <color name="colorFBLightBlue">#8b9dc3</color>
+    <color name="colorFBWhite3">#dfe3ee</color>
+    <color name="colorFBWhite2">#f7f7f7</color>
+    <color name="colorFBWhite1">#ffffff</color>
+
+
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="list_item_title">#fff</color>
+
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+
+
+    <color name="colorMintGreen0">#e5fff6</color>
+    <color name="colorMintGreen1">#ccffed</color>
+    <color name="colorMintGreen2">#b2ffe4</color>
+    <color name="colorMintGreen3">#99ffdb</color>
+    <color name="colorMintGreen4">#7fffd2</color>
+    <color name="colorMintGreen5">#66ffc9</color>
+    <color name="colorMintGreen6">#4cffc0</color>
+    <color name="colorMintGreen7">#32ffb7</color>
+    <color name="colorMintGreen8">#19ffae</color>
+    <color name="colorMintGreen9">#00ffa5</color>
+    <color name="colorMintGreen10">#00e594</color>
+    <color name="colorMintGreen11">#00cc84</color>
+    <color name="colorMintGreen12">#00b273</color>
+    <color name="colorMintGreen13">#00cc84</color>
+    <color name="colorMintGreen14">#009963</color>
+    <color name="colorMintGreen15">#007f52</color>
+    <color name="colorMintGreen16">#006642</color>
+    <color name="colorMintGreen17">#004c31</color>
+    <color name="colorMintGreen18">#003321</color>
+    <color name="colorMintGreen19">#001910</color>
+    <color name="colorMaroon5">#660000</color>
+    <color name="colorMaroon6">#4c0000</color>
+
+    <color name="buttonColor">@color/colorMintGreen14</color>
+    <color name="buttonTextColor">@color/colorMintGreen2</color>
+    <color name="activityBackGroundColor">@color/colorMintGreen2</color>
+    <color name="textColor">@color/colorMintGreen14</color>
+    <color name="edittextColor">@color/colorMintGreen17</color>
+
+
+
+
+
+
+
+</resources>

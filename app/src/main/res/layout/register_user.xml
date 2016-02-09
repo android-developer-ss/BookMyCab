@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/car_p1"
+    android:id="@+id/register_user_container"
+    android:orientation="vertical">
+
+    <include layout="@layout/fragment_gplus_fb_buttons" />
+
+    <include layout="@layout/line_or_line" />
+
+    <LinearLayout
+        style="@style/TextEditStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/registerPage_horizontal_margin"
+        android:layout_marginRight="@dimen/registerPage_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <!-- *********************************************************************************** -->
+        <!-- FIRST NAME and LAST NAME -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- ******************************************************************************* -->
+            <!-- FIRST NAME -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/text_right_margin"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="FIRST NAME"
+                    android:textAlignment="center" />
+
+                <EditText
+                    style="@style/EditTextStyleRegisterForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:colorControlHighlight="@color/colorBlack0"
+                    android:colorControlNormal="@color/colorBlack0"
+                    android:hint="Enter first name" />
+            </LinearLayout>
+
+            <!-- ******************************************************************************* -->
+            <!-- LAST NAME -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/text_right_margin"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="LAST NAME"
+                    android:textAlignment="center" />
+
+                <EditText
+                    style="@style/EditTextStyleRegisterForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter last name"
+                    android:textColorSecondary="@color/colorBlack0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- *********************************************************************************** -->
+        <!-- MOBILE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/text_right_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="Mobile"
+                android:textAlignment="center" />
+
+            <EditText
+                style="@style/EditTextStyleRegisterForm"
+                android:id="@+id/user_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Mobile Number" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- *************************************************************************************** -->
+    <include layout="@layout/fragment_email_pwd_nextbutton"/>
+
+    <!-- *************************************************************************************** -->
+    <include layout="@layout/snack_bar_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
+</LinearLayout>

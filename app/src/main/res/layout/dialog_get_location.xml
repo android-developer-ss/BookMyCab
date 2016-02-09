@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TextEditStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="0.7"
+    android:background="@color/colorMaroon6"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:alpha="1.0"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/map_point" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:alpha="1.0"
+        android:background="@color/colorGrey0" />
+
+    <TextView
+        style="@style/TextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="16dp"
+        android:alpha="1.0"
+        android:text="Enter Location"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/address"
+        style="@style/EditTextStyleRegisterForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:alpha="1.0"
+        android:fontFamily="sans-serif"
+        android:hint="Enter your address"
+        android:textAlignment="center" />
+</LinearLayout>

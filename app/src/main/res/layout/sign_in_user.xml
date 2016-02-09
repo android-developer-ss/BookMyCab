@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/car_p1"
+    android:id="@+id/sign_in_user_container"
+    android:orientation="vertical">
+
+    <include layout="@layout/fragment_gplus_fb_buttons" />
+
+    <include layout="@layout/line_or_line" />
+
+    <include layout="@layout/fragment_email_pwd_nextbutton"/>
+    <!-- *************************************************************************************** -->
+    <include layout="@layout/snack_bar_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+</LinearLayout>

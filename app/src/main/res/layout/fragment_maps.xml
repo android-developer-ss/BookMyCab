@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_map_container"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/car_p1"
+    android:orientation="vertical">
+
+    <!-- *************************************************************************************** -->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/source_button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:enabled="false"-->
+    <!--android:text="Source" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/destination_button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:enabled="false"-->
+    <!--android:text="Destination" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/estimate_button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:enabled="false"-->
+    <!--android:text="Estimate" />-->
+    <!--</LinearLayout>-->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/show_cabs_button"
+                style="@style/ScrollButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/car_icon"
+                android:text="Show Cabs Near Me" />
+            <Button
+                android:id="@+id/animate_car"
+                style="@style/ScrollButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/car_icon"
+                android:text="Animate Car" />
+            <Button
+                android:id="@+id/source_button"
+                style="@style/ScrollButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/marker_pink"
+                android:text="Enter exact Pick Up Location" />
+
+            <Button
+                android:id="@+id/destination_button"
+                style="@style/ScrollButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/marker_green"
+                android:text="Enter Destination" />
+
+            <Button
+                android:id="@+id/estimate_button"
+                style="@style/ScrollButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/money_bag"
+                android:text="Estimate Fare" />
+
+            <Button
+                android:id="@+id/route_options_button"
+                style="@style/ScrollButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/road_24"
+                android:text="Route Options" />
+
+            <Button
+                style="@style/ScrollButtonStyle"
+                android:id="@+id/share_directions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/share"
+                android:text="Share Directions" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--<TextView-->
+    <!--android:id="@+id/helper_text"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:text="@string/source_string"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textSize="20sp" />-->
+
+
+    <!-- *************************************************************************************** -->
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp" />
+
+    <!-- *************************************************************************************** -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ads go here.."
+        android:textAlignment="center" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1525758968346984/4292985358" />
+
+
+</LinearLayout>

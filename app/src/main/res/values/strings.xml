@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Book My Cab</string>
+
+    <!-- TODO(user): replace with your real server client ID -->
+    <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
+         from https://console.developers.google.com/ -->
+    <string name="server_client_id">662129107466-dsk3b29mnghqaahq33vr2jnc93fm2vjh.apps.googleusercontent.com</string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Map</item>
+        <item>View History</item>
+        <item>Find Cabs</item>
+        <item>View Cab Drivers</item>
+        <item>Sign Out</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <!--<string name="google_app_id">AIzaSyAYSefL-7VDaENcauwR7Z3xLn82j00e0TI</string>-->
+
+    <string name="source_string">Select Pick Up Location</string>
+    <string name="destination_string">Select Destination</string>
+
+    <string-array name="route_options_array">
+        <item>Avoid Tolls</item>
+        <item>Avoid Highways</item>
+        <item>Avoid Ferries</item>
+    </string-array>
+
+</resources>

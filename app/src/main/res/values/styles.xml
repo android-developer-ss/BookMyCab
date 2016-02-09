@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorMintGreen17</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorMintGreen18</item>-->
+        <item name="colorPrimary">@color/colorMaroon5</item>
+        <item name="colorPrimaryDark">@color/colorMaroon6</item>
+        <item name="colorAccent">@color/colorLightYellow0</item>
+
+        <!--<item name="android:textColorPrimary">@color/colorMintGreen16</item>-->
+        <!--<item name="colorPrimary">@android:color/transparent</item>-->
+        <!--<item name="windowActionBarOverlay">true</item>-->
+    </style>
+    <style name="ActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMaroon5</item>
+        <item name="colorPrimaryDark">@color/colorMaroon6</item>
+        <item name="colorAccent">@color/colorMintGreen2</item>
+
+        <!--<item name="android:textColorPrimary">@color/colorMintGreen16</item>-->
+        <!--<item name="colorPrimary">@android:color/transparent</item>-->
+        <!--<item name="windowActionBarOverlay">true</item>-->
+    </style>
+    <style name="AppTheme.Map">
+        <item name="android:homeAsUpIndicator">@mipmap/ic_menu_white</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+    <!-- Text View Styling-->
+    <style name="TextEditStyle">
+        <item name="android:background">@color/colorMaroon6</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+
+
+    <!-- *************************************************************************************** -->
+    <!-- Text View Styling-->
+    <style name="TextTitle">
+        <item name="android:alpha">1.0</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorLightYellow0</item>
+        <!--<item name="android:textColor">@color/colorMintGreen14</item>-->
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+    <!-- Edit View Styling-->
+    <style name="EditTextStyleRegisterForm" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:alpha">1.0</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorBlack0</item>
+        <item name="android:textColorHint">@color/colorBlack2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/colorBlack1</item>
+        <item name="colorControlHighlight">@color/colorBlack1</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- *************************************************************************************** -->
+    <!-- Set the transparency of button-->
+    <style name="ButtonTransparency">
+        <item name="android:alpha">0.7</item>
+    </style>
+    <!-- *************************************************************************************** -->
+    <!-- Set the button style with background color and font color-->
+    <style name="ButtonStyle" parent="ButtonTransparency">
+        <!--<item name="android:background">@color/colorMintGreen14</item>-->
+        <item name="android:background">@color/colorMaroon5</item>
+        <!--<item name="android:textColor">@color/colorMintGreen2</item>-->
+        <item name="android:textColor">@color/colorLightYellow0</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ScrollButtonStyle" parent="ButtonStyle">
+        <item name="android:layout_marginTop">@dimen/scroll_button_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/scroll_button_top_margin</item>
+        <item name="android:layout_marginLeft">@dimen/button_left_margin</item>
+        <item name="android:drawablePadding">@dimen/button_text_padding</item>
+        <item name="android:paddingLeft">@dimen/button_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/button_horizontal_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+    <!-- Cabs List Item Styling-->
+    <style name="CabListItemStyle" >
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlack0</item>
+    </style>
+    <style name="CabListItemStyle.CabNumber" >
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorBlack0</item>
+    </style>
+
+
+</resources>

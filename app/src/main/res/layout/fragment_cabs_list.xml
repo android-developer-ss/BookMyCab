@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMaroon5"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:alpha="0.8"
+    android:orientation="vertical">
+    <TextView
+        android:alpha="1.0"
+        android:background="@color/colorMaroon5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Cab"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#ffffff"/>
+    <ListView
+        android:alpha="1.0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@android:id/list">
+
+    </ListView>
+
+</LinearLayout>
