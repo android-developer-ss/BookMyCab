@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.ListFragment;
 import android.support.v4.content.LocalBroadcastManager;
+import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -69,6 +70,21 @@ public class CabsListFragment extends ListFragment implements AdapterView.OnItem
             Log.i("MainActivity", "nothing on backstack, calling super");
 //            super.onBackPressed();
         }
+
+        //Send an sms..
+        sendSMS();
+    }
+
+    private void sendSMS() {
+
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage("+15073416266",
+                    null,
+                    "3755 Main St 110, St Charles, IL, 60174",
+                    null,
+                    null);
+            Toast.makeText(getActivity(), "message Sent", Toast.LENGTH_SHORT).show();
+
     }
 
     public void fillArrayList() {

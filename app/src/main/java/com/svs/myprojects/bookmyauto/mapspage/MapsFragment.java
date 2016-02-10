@@ -339,6 +339,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
     public void estimate_button_function() {
         if (mSourceMarker != null && mDestinationMarker != null && mDistance != null) {
             String cost = mDistance.replace("mi", "");
+            cost = cost.replace("ft", "");
             float distanceInMiles = Float.parseFloat(cost);
             float costAsPerMiles = distanceInMiles * 2.5f;
             createDialog("Fare Estimation", "Your estimated fare is : " + costAsPerMiles + "$");
@@ -516,7 +517,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
 
     /**********************************************************************************************/
     public void createDialog(String title, String content) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(),R.style.DialogBoxStyle);
         // Add the buttons
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {

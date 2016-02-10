@@ -2,20 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorMaroon5"
+    android:background="@color/colorMaroon4"
     android:layout_margin="@dimen/activity_horizontal_margin"
     android:alpha="0.8"
     android:orientation="vertical">
     <TextView
         android:alpha="1.0"
-        android:background="@color/colorMaroon5"
+        android:background="@color/colorMaroon6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select Cab"
         android:textAlignment="center"
         android:textSize="40sp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
         android:textColor="#ffffff"/>
     <ListView
         android:alpha="1.0"

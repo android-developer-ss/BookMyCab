@@ -13,6 +13,7 @@
         <!--<item name="colorPrimary">@android:color/transparent</item>-->
         <!--<item name="windowActionBarOverlay">true</item>-->
     </style>
+
     <style name="ActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorMaroon5</item>
@@ -23,6 +24,7 @@
         <!--<item name="colorPrimary">@android:color/transparent</item>-->
         <!--<item name="windowActionBarOverlay">true</item>-->
     </style>
+
     <style name="AppTheme.Map">
         <item name="android:homeAsUpIndicator">@mipmap/ic_menu_white</item>
     </style>
@@ -95,14 +97,37 @@
 
     <!-- *************************************************************************************** -->
     <!-- Cabs List Item Styling-->
-    <style name="CabListItemStyle" >
+    <style name="CabListItemStyle">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/colorBlack0</item>
     </style>
-    <style name="CabListItemStyle.CabNumber" >
+
+    <style name="CabListItemStyle.CabNumber">
         <item name="android:textSize">30sp</item>
         <item name="android:textColor">@color/colorBlack0</item>
     </style>
+
+
+    <!-- *************************************************************************************** -->
+    <!-- Dialog Box Style-->
+    <style name="DialogBoxStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#80660000</item>
+        <item name="android:textColor">@color/colorBlack0</item>
+        <item name="android:textColorPrimary">@color/colorLightYellow0</item>
+        <item name="android:textColorSecondary">@color/colorLightYellow0</item>
+        <item name="colorPrimaryDark">#804c0000</item>
+        <item name="colorPrimary">#80660000</item>
+        <item name="colorAccent">@color/colorLightYellow0</item>
+        <item name="textColorAlertDialogListItem">@color/colorLightYellow0</item>
+        <item name="alertDialogCenterButtons">true</item>
+    </style>
+
+    <style name="StarRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_selector</item>
+        <item name="android:minHeight">28dip</item>
+        <item name="android:maxHeight">28dip</item>
+    </style>
+
 
 
 </resources>

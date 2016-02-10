@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        card_view:cardCornerRadius="4dp">
+
+        <ImageView
+            android:id="@+id/travel_history_car_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/travel_history_trip_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5th Jan 2016 (5.26PM)"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack0"
+                android:background="@color/colorMaroon5"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorMaroon2"
+                android:alpha="0.8"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:alpha="1.0"
+                    android:orientation="vertical">
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1"
+                        android:text="FROM:"
+                        android:textColor="@color/colorBlack0"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/travel_history_from_addr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3755 E Main St # 110, St. Charles, IL 60174"
+                        android:textColor="@color/colorBlack0"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1"
+                        android:text="TO:"
+                        android:textColor="@color/colorBlack0"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/travel_history_to_addr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1520 E. Main, St. Charles, IL 60174"
+                        android:textColor="@color/colorBlack0"
+                        android:textSize="12sp" />
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+                <!-- ************************************************************************-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <!-- DRIVER NAME -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Driver Name:"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/colorBlack0"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/travel_history_driver_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ellen Pompeo"
+                            android:textColor="@color/colorBlack0"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <!-- VEHICLE NUMBER -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_weight="1"
+                            android:text="Vehicle#:"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/colorBlack0"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/travel_history_vehicle_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="123456"
+                            android:textColor="@color/colorBlack0"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- CAR TYPE -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_weight="1"
+                            android:text="Car Type"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/colorBlack0"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/travel_history_car_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Santro"
+                            android:textColor="@color/colorBlack0"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <!-- CHARGE AMOUNT -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_weight="1"
+                            android:text="Cost:"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/colorBlack0"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/travel_history_charge_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="23$"
+                            android:textColor="@color/colorBlack0"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

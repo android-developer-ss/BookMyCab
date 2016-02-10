@@ -6,16 +6,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <TextView
-            style="@style/TextTitle"
-            android:id="@+id/txtLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="View History"
-            android:textSize="16dp" />
+        <!--<TextView-->
+        <!--style="@style/TextTitle"-->
+        <!--android:id="@+id/txtLabel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="View History"-->
+        <!--android:textSize="16dp" />-->
+        <!-- A CardView that contains a TextView -->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewInHistory"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
 

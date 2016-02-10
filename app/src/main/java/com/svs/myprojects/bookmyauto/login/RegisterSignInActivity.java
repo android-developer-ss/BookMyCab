@@ -26,9 +26,9 @@ public class RegisterSignInActivity extends AppCompatActivity implements Registe
         super.onCreate(savedInstanceState);
         mRegisterOrSignIn = getIntent().getExtras().getString(Constants.REGISTER_SIGN_IN_TYPE);
         if (mRegisterOrSignIn.equals(Constants.REGISTER_TYPE)) {
-            setContentView(R.layout.register_user);
+            setContentView(R.layout.login_register_user);
         } else {
-            setContentView(R.layout.sign_in_user);
+            setContentView(R.layout.login_sign_in_user);
         }
         getHandlers();
     }

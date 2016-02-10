@@ -2,7 +2,6 @@ package com.svs.myprojects.bookmyauto;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
@@ -39,7 +38,7 @@ public class CustomDialog extends DialogFragment {
         mAddressType = bundle.getString(Constants.ADDRESS_TYPE);
         mMultipleOptions = bundle.getStringArray(Constants.SET_MULTIPLE_OPTIONS);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(),R.style.DialogBoxStyle);
 
         if (getParentFragment() instanceof CustomDialogListener) {
             mListener = (CustomDialogListener) getParentFragment();
@@ -75,6 +74,7 @@ public class CustomDialog extends DialogFragment {
 
 
         } else if (mMultipleOptions != null) {
+
 
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
@@ -129,7 +129,16 @@ public class CustomDialog extends DialogFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (getDialog() != null) {
-            getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+//            getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+//            getDialog().getWindow().setBackgroundDrawableResource(R.drawable.dialog_box);
+//
+//            int messageId = getDialog().getContext().getResources().getIdentifier("android:id/message", null, null);
+////            View divider = getDialog().findViewById(messageId);
+////            divider.setBackgroundColor(getResources().getColor(R.color.));
+//            TextView textView = (TextView)getDialog().findViewById(messageId);
+//            textView.setTextColor(getResources().getColor(R.color.colorBlack0));
+
+
         }
         return super.onCreateView(inflater, container, savedInstanceState);
     }

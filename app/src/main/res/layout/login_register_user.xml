@@ -6,9 +6,9 @@
     android:id="@+id/register_user_container"
     android:orientation="vertical">
 
-    <include layout="@layout/fragment_gplus_fb_buttons" />
+    <include layout="@layout/login_fragment_gplus_fb_buttons" />
 
-    <include layout="@layout/line_or_line" />
+    <include layout="@layout/login_line_or_line" />
 
     <LinearLayout
         style="@style/TextEditStyle"
@@ -106,7 +106,7 @@
 
     </LinearLayout>
     <!-- *************************************************************************************** -->
-    <include layout="@layout/fragment_email_pwd_nextbutton"/>
+    <include layout="@layout/login_fragment_email_pwd_nextbutton"/>
 
     <!-- *************************************************************************************** -->
     <include layout="@layout/snack_bar_layout"
